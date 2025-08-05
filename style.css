@@ -1,0 +1,550 @@
+:root {
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --secondary: #1E40AF;
+            --accent: #EF4444;
+            --text-dark: #1F2937;
+            --text-gray: #6B7280;
+            --bg-light: #F9FAFB;
+            --border-color: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Kumbh Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: white;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+        }
+        
+        /* Header Section */
+        .header-section {
+            width: 100%;
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #F9FAFB, #EFF6FF);
+        }
+        
+        .logo {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
+            background: linear-gradient(90deg, #2563EB, #3B82F6, #60A5FA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            font-weight: 800;
+            position: relative;
+            padding: 0 0.5rem;
+        }
+        
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #2563EB, #3B82F6, #60A5FA);
+            border-radius: 3px;
+        }
+        
+        .tagline {
+            font-size: clamp(1.1rem, 4vw, 1.5rem);
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        /* Video Section */
+        .video-section {
+            width: 100%;
+            padding: 5rem 2rem;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+
+        .video-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16/9;
+    position: relative;
+    background: #000;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#youtube-video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(37, 99, 235, 0.8); /* Your blue color */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#play-button:hover {
+    background: rgba(37, 99, 235, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+#play-button svg {
+    fill: #ffffff;
+    margin-left: 5px;
+}
+        
+        /* Rights Matter Section */
+        .rights-section {
+            width: 100%;
+            padding: 6rem 2rem;
+            background-color: white;
+            position: relative;
+        }
+        
+        .rights-content {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .rights-image {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); */
+            transition: transform 0.5s ease;
+        }
+        
+        .rights-image:hover {
+            transform: translateY(-10px);
+        }
+        
+        .rights-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .rights-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .section-title {
+            font-size: clamp(1.75rem, 6vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+        
+        .problem-statement {
+            font-size: clamp(1.1rem, 4vw, 1.25rem);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .issues-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .issues-list li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+        
+        .issues-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+        }
+        
+        .cta-phrase {
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
+            font-weight: 700;
+            color: var(--accent);
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-phrase:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.2);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            width: 100%;
+            padding: 6rem 2rem;
+            background-color: var(--bg-light);
+            position: relative;
+        }
+        
+        .faq-title {
+            font-size: clamp(1.75rem, 6vw, 2.5rem);
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--text-dark);
+            position: relative;
+        }
+        
+        .faq-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+        
+        .faq-grid {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            transition: height 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item:hover::before {
+            height: 100%;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-item h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        
+        .faq-item:hover h3 {
+            color: var(--primary-dark);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            color: var(--text-gray);
+            line-height: 1.6;
+            opacity: 0;
+        }
+        
+        .faq-answer p {
+            padding-top: 1rem;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            opacity: 1;
+        }
+        
+        .faq-toggle {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-toggle::before,
+        .faq-toggle::after {
+            content: "";
+            position: absolute;
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-toggle::before {
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: translateY(-50%);
+        }
+        
+        .faq-toggle::after {
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* Waitlist Section */
+        .waitlist-section {
+            width: 100%;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .waitlist-section::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .waitlist-section::after {
+            content: "";
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+        
+        .waitlist-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .waitlist-box h3 {
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        
+        .waitlist-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        input[type="email"] {
+            width: 100%;
+            padding: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Kumbh Sans', sans-serif;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .join-button {
+            background-color: white;
+            color: var(--primary);
+            border: none;
+            padding: 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Kumbh Sans', sans-serif;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .join-button:hover {
+            background-color: #F0F4FF;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
+            background-color: white;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .rights-content {
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-section,
+            .video-section,
+            .rights-section,
+            .faq-section,
+            .waitlist-section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .rights-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .section-title, 
+            .problem-statement,
+            .issues-list {
+                text-align: center;
+            }
+            
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .issues-list li::before {
+                display: none;
+            }
+            
+            .cta-phrase {
+                display: block;
+                text-align: center;
+                margin: 2rem auto 0;
+            }
+            
+            .waitlist-section::before,
+            .waitlist-section::after {
+                display: none;
+            }
+            
+            #play-button {
+                width: 60px;
+                height: 60px;
+            }
+            
+            #play-button::after {
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                border-left: 20px solid var(--primary);
+            }
+        }

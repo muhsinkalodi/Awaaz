@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaaz - Early Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <div class="logo">Awaaz</div>
+            <p class="tagline">Legal access isn't a luxury, it's your right.</p>
+        </section>
+        
+        <!-- Video Section -->
+    <section class="video-section">
+    <div class="video-container">
+        <div class="video-wrapper">
+            <!-- YouTube iframe embed -->
+            <iframe id="youtube-video"
+                src="https://www.youtube.com/embed/nJX5EORRHDo?enablejsapi=1&rel=0&modestbranding=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <!-- Custom play button -->
+            <button id="play-button" aria-label="Play video">
+                <svg viewBox="0 0 24 24" width="48" height="48">
+                    <path fill="#ffffff" d="M8 5v14l11-7z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+        
+        <!-- Why Rights Matter Section -->
+        <section class="rights-section">
+            <div class="rights-content">
+                <div class="rights-image">
+                    <img src="/gud.png" 
+                         alt="Diverse group of people learning about legal rights"
+                         loading="lazy"
+                         width="600"
+                         height="400">
+                </div>
+                <div class="rights-text">
+                    <h2 class="section-title">Why Knowing Your Rights Matters</h2>
+                    <p class="problem-statement">Most Indian's don't know their rights - and the silence costs them everything.</p>
+                    
+                    <ul class="issues-list">
+                        <li>From false arrests to unpaid wages...</li>
+                        <li>From eviction to assault...</li>
+                    </ul>
+                    
+                    <p class="cta-phrase">Let your Rights-Speak Book.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is Awaaz?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Awaaz is a new way to access legal help — faster, easier, and more human.
+It’s not just an app. It’s a voice for those who’ve never been heard.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Who is Awaaz for?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For anyone who’s ever felt helpless in the face of legal trouble —
+whether you're being harassed, cheated, threatened, or simply ignored.</p>
+                    </div>
+                </div>
+                <!-- <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this an app, a website, or a service?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're building a comprehensive platform with both web and mobile access.</p>
+                    </div>
+                </div> -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is it free?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes — Awaaz will always offer a free way to understand your rights and connect with legal support.
+Because justice shouldn’t depend on your wallet.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When is it launching?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Very soon. We’re in the final phase.
+Sign up now to be among the first to use it and help shape the future of legal access in India.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens after i sign ip ?</h3>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You’ll get early access to the platform before public release —
+plus exclusive updates, priority support, and a chance to be part of something powerful..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Waitlist Section -->
+        <section class="waitlist-section">
+            <div class="waitlist-box">
+                <h3>Join now with early access</h3>
+                <form class="waitlist-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="join-button">Join waitlist</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Copyright@2025 Awaaz. All Rights Reserved</p>
+        </footer>
+    </div>
+    <script>
+        // Video Play Button
+        // const video = document.getElementById('awaaz-video');
+        // const playButton = document.getElementById('play-button');
+        
+        // playButton.addEventListener('click', () => {
+        //     if (video.paused) {
+        //         video.play();
+        //         playButton.style.display = 'none';
+        //     }
+        // });
+        
+        // video.addEventListener('play', () => {
+        //     playButton.style.display = 'none';
+        // });
+        
+        // video.addEventListener('pause', () => {
+        //     playButton.style.display = 'flex';
+        // });
+        
+        // FAQ Accordion with Mouse Events
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            
+            // Click event for mobile/touch devices
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                }
+            });
+            
+            // Mouse enter/leave for desktop
+            if (window.innerWidth > 768) {
+                item.addEventListener('mouseenter', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.add('active');
+                });
+                
+                item.addEventListener('mouseleave', () => {
+                    item.classList.remove('active');
+                });
+            }
+        });
+        
+        // Update event listeners on window resize
+        window.addEventListener('resize', () => {
+            faqItems.forEach(item => {
+                // Remove all existing event listeners
+                item.removeEventListener('mouseenter', handleMouseEnter);
+                item.removeEventListener('mouseleave', handleMouseLeave);
+                
+                // Add appropriate listeners based on screen size
+                if (window.innerWidth > 768) {
+                    item.addEventListener('mouseenter', handleMouseEnter);
+                    item.addEventListener('mouseleave', handleMouseLeave);
+                }
+            });
+        });
+        
+        function handleMouseEnter(e) {
+            const item = e.currentTarget;
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            item.classList.add('active');
+        }
+        
+        function handleMouseLeave(e) {
+            e.currentTarget.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
