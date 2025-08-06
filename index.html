@@ -124,20 +124,29 @@
 
   <!-- Waitlist Form -->
   <div class="mt-12 max-w-lg mx-auto">
-                    <form class="relative flex items-center shadow-lg rounded-full overflow-hidden">
-                        <input 
-                            type="email" 
-                            placeholder="Your email address" 
-                            class="w-full py-4 pl-6 pr-40 text-gray-700 focus:outline-none"
-                            required
-                        >
-                        <button 
-                            type="submit"
-                            class="absolute right-1 top-1 bottom-1 bg-gray-800 text-white font-semibold px-6 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
-                        >
-                            Join waitlist
-                        </button>
-                    </form>
+   <form 
+    id="waitlist-form"
+    class="relative flex items-center shadow-lg rounded-full overflow-hidden"
+>
+    <input 
+        type="email" 
+        name="email"
+        placeholder="Your email address" 
+        class="w-full py-4 pl-6 pr-40 text-gray-700 focus:outline-none"
+        required
+    >
+    <button 
+        type="submit"
+        class="absolute right-1 top-1 bottom-1 bg-gray-800 text-white font-semibold px-6 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
+    >
+        Join waitlist
+    </button>
+</form>
+
+
+<!-- Hidden iframe to prevent page refresh -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
                     <p class="mt-4 text-sm text-gray-500">
                         Get priority access, early features, and exclusive perks.
                     </p>
@@ -253,5 +262,43 @@ plus exclusive updates, priority support, and a chance to be part of something p
     <p class="text-xs text-gray-400 font-mono">Copyright ©2025 LegalBook. All Rights Reserved.</p>
   </footer>
 
+
+
+
+  <script>
+    const form = document.getElementById('waitlist-form');
+    const url = 'https://script.google.com/macros/s/AKfycbyoTFhjaA0Jp-sorEv_a6r1rqn9ZB6PkmmQ7NW79ZK03BiFihCqU9tSquQK2c50Owg/exec';
+
+    form.addEventListener('submit', (e) => {
+        // Prevent the default form submission behavior
+        e.preventDefault();
+
+        // Get the submit button and show a "loading" state
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+
+        // Use fetch to send the form data
+        fetch(url, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => response.json()) // Assuming your script returns JSON
+        .then(data => {
+            console.log('Success:', data);
+            alert('Email submitted successfully!');
+            form.reset(); // Reset the form only after a successful submission
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+        })
+        .finally(() => {
+            // Re-enable the button and restore its text
+            submitButton.disabled = false;
+            submitButton.textContent = 'Join waitlist';
+        });
+    });
+</script>
 </body>
 </html>
