@@ -30,3 +30,18 @@ const tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+const sheetId = 'YOUR_SHEET_ID';
+const sheetName = 'Sheet1'; // Change if your sheet has a different name
+
+function doPost(e) {
+  const ss = SpreadsheetApp.openById(sheetId);
+  const sheet = ss.getSheetByName(sheetName);
+  
+  const data = JSON.parse(e.postData.contents);
+  sheet.appendRow([data.email, new Date()]);
+  
+  return ContentService.createTextOutput(JSON.stringify({success: true}))
+    .setMimeType(ContentService.MimeType.JSON);
+}
