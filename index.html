@@ -1,266 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LegalBook</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalBook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    @media (max-width: 480px) {
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      @media (max-width: 480px) {
         #image-container {
           margin-top: -80px !important;
           margin-bottom: -50px !important;
         }
       }
-      
+
       @media (min-width: 481px) and (max-width: 767px) {
         #image-container {
           margin-top: -100px !important;
           margin-bottom: -70px !important;
         }
       }
-      
+
       @media (min-width: 768px) and (max-width: 1029px) {
         #image-container {
           margin-top: -120px !important;
           margin-bottom: -80px !important;
         }
       }
-      
+
       @media (min-width: 1030px) {
         #image-container {
           margin-top: -140px !important;
           margin-bottom: -90px !important;
         }
       }
-      
+
       @media (min-width: 1400px) {
         #image-container {
           margin-top: -160px !important;
           margin-bottom: -100px !important;
         }
       }
-      
+
       #building {
         margin-top: 20px;
       }
-      
+
       @media (min-width: 481px) {
         #building {
           margin-top: 70px;
         }
       }
-      
+
       @media (min-width: 768px) {
         #building {
           margin-top: 80px;
         }
       }
-      
+
       @media (min-width: 1030px) {
         #building {
           margin-top: 140px;
         }
       }
-      
+
       @media (min-width: 1400px) {
         #building {
           margin-top: 160px;
         }
       }
     </style>
-</head>
-<body class="bg-white text-gray-900">
-
-  <div class="px-2 sm:px-4 pt-3 pb-4 border-gray-300">
+  </head>
+  <body class="bg-white text-gray-900">
+    <div class="px-2 sm:px-4 pt-3 pb-4 border-gray-300">
       <div class="max-w-[1800px] mx-auto mt-1 flex justify-center">
-        <div class="w-full max-w-[1800px] h-[60px] bg-[#2C2C2C] rounded-xl flex items-center justify-between px-3 sm:px-8">
-          
-          <div class="flex items-center gap-2 sm:gap-5 text-white font-kumbh flex-shrink-0">
-            <div class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap">FAQ</div>
-            <div class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap">What we do?</div>
+        <div
+          class="w-full max-w-[1800px] h-[60px] bg-[#2C2C2C] rounded-xl flex items-center justify-between px-3 sm:px-8"
+        >
+          <div
+            class="flex items-center gap-2 sm:gap-5 text-white font-kumbh flex-shrink-0"
+          >
+            <a
+              href="#faq"
+              class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap"
+              >FAQ</a
+            >
+            <div
+              class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap"
+            >
+              What we do?
+            </div>
           </div>
-          
-          <h1 class="text-white text-lg sm:text-2xl font-normal text-center font-kumbh flex-grow mx-2 sm:mx-4">
-            <span class="font-bold">L</span>egalBook
-          </h1>
-          
-          <button class="bg-white text-[#153D59] font-semibold px-3 sm:px-5 py-2 rounded-[10px] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md text-xs sm:text-base whitespace-nowrap flex-shrink-0">
+
+          <h1 class="text-white text-lg sm:text-2xl font-normal text-center font-kumbh flex-grow mx-2 sm:mx-4 align-baseline">
+    <span class="font-bold">L</span><span class="text-base sm:text-xl">egalBook</span>
+</h1>
+
+          <button
+            class="bg-white text-[#153D59] font-semibold px-3 sm:px-5 py-2 rounded-[10px] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md text-xs sm:text-base whitespace-nowrap flex-shrink-0"
+          >
             Join Waiting List
           </button>
         </div>
       </div>
     </div>
 
-
-  <section class="text-center px-6 md:px-8 pt-8 pb-8 md:pt-12 md:pb-12 bg-white">
-    <h1 class="text-[2.5rem] md:text-[3rem] leading-tight font-bold tracking-tight">
-        Legal access isn’t a luxury. <br>
+    <section
+      class="text-center px-6 md:px-8 pt-8 pb-8 md:pt-12 md:pb-12 bg-white"
+    >
+      <h1
+        class="text-[2.5rem] md:text-[3rem] leading-tight font-bold tracking-tight"
+      >
+        Legal access isn’t a luxury. <br />
         <span class="italic text-gray-700">It’s your right.</span>
-    </h1>
+      </h1>
 
-    <p class="mt-6 text-gray-600 text-sm md:text-base leading-relaxed font-montserrat max-w-2xl mx-auto">
-        Every pending case is a life paused. And in India, there are over 5 crore lives on hold.
-    </p>
+      <p
+        class="mt-6 text-gray-600 text-sm md:text-base leading-relaxed font-montserrat max-w-2xl mx-auto"
+      >
+        Every pending case is a life paused. And in India, there are over 5
+        crore lives on hold.
+      </p>
 
-    <div class="mt-10 md:mt-12 max-w-lg mx-auto">
-        <form 
-            id="waitlist-form"
-            class="relative flex items-center shadow-lg rounded-full overflow-hidden"
+      <div class="mt-10 md:mt-12 max-w-lg mx-auto">
+        <form
+          id="waitlist-form"
+          class="relative flex items-center shadow-lg rounded-full overflow-hidden"
         >
-            <input 
-                type="email" 
-                name="email"
-                placeholder="Your email address" 
-                class="w-full py-4 pl-6 pr-40 text-gray-700 focus:outline-none"
-                required
-            >
-            <button 
-                type="submit"
-                class="absolute right-1 top-1 bottom-1 bg-gray-800 text-white font-semibold px-6 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
-            >
-                Join waitlist
-            </button>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            class="w-full py-4 pl-6 pr-40 text-gray-700 focus:outline-none"
+            required
+          />
+          <button
+            type="submit"
+            class="absolute right-1 top-1 bottom-1 bg-gray-800 text-white font-semibold px-6 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
+          >
+            Join waitlist
+          </button>
         </form>
 
         <p class="mt-4 text-sm text-gray-500">
-            Get priority access, early features, and exclusive perks.
-        </p>
-    </div>
-</section>
-
- <section id="building" class="relative bg-[#2E2E2E] py-8 md:py-12 overflow-visible">
-  <div class="container mx-auto px-4 md:px-6 relative z-10">
-    <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
-      
-      <div class="w-full md:w-1/2 z-10 relative text-center md:text-left pr-2 md:pr-0">
-        <h2 class="text-lg sm:text-xl md:text-4xl font-bold text-white leading-tight">
-          What are we building?
-        </h2>
-        <p class="mt-3 md:mt-6 text-xs sm:text-sm md:text-lg text-gray-300 leading-relaxed">
-          We're building a <strong class="font-semibold text-white">legal tech</strong> platform that makes justice accessible, understandable, and affordable for every Indian.<br><br>
-          Just <strong class="font-semibold text-white">real legal help</strong>, in your language, on your phone when you actually need it.
+          Get priority access, early features, and exclusive perks.
         </p>
       </div>
+    </section>
 
-      <div id="image-container" class="w-5/12 md:w-1/2 relative z-20 justify-center items-center hidden md:flex">
-        <img 
-          src="pic.png" 
-          alt="Scales of Justice Illustration"
-          class="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[600px] object-contain md:opacity-75 transition-opacity"
-          onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22650%22 viewBox=%220 0 600 650%22%3E%3Crect width=%22600%22 height=%22650%22 fill=%22%23e2e8f0%22/%3E%3Cg fill=%22%23334155%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 text-anchor=%22middle%22%3E%3Ctext x=%22300%22 y=%22280%22%3EScales of Justice%3C/text%3E%3Ctext x=%22300%22 y=%22320%22%3EIllustration%3C/text%3E%3Ctext x=%22300%22 y=%22380%22 font-size=%2218%22%3EImage Not Found%3C/text%3E%3C/g%3E%3C/svg%3E';"
-        />
+    <section
+      id="building"
+      class="relative bg-[#2E2E2E] py-8 md:py-12 overflow-visible"
+    >
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+          <div
+            class="w-full md:w-1/2 z-10 relative text-center md:text-left pr-2 md:pr-0"
+          >
+            <h2
+              class="text-lg sm:text-xl md:text-4xl font-bold text-white leading-tight"
+            >
+              What are we building?
+            </h2>
+            <p
+              class="mt-3 md:mt-6 text-xs sm:text-sm md:text-lg text-gray-300 leading-relaxed"
+            >
+              We're building a
+              <strong class="font-semibold text-white">legal tech</strong>
+              platform that makes justice accessible, understandable, and
+              affordable for every Indian.<br /><br />
+              Just
+              <strong class="font-semibold text-white">real legal help</strong>,
+              in your language, on your phone when you actually need it.
+            </p>
+          </div>
+
+          <div
+            id="image-container"
+            class="w-5/12 md:w-1/2 relative z-20 justify-center items-center hidden md:flex"
+          >
+            <img
+              src="pic.png"
+              alt="Scales of Justice Illustration"
+              class="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[600px] object-contain"
+              onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22650%22 viewBox=%220 0 600 650%22%3E%3Crect width=%22600%22 height=%22650%22 fill=%22%23e2e8f0%22/%3E%3Cg fill=%22%23334155%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 text-anchor=%22middle%22%3E%3Ctext x=%22300%22 y=%22280%22%3EScales of Justice%3C/text%3E%3Ctext x=%22300%22 y=%22320%22%3EIllustration%3C/text%3E%3Ctext x=%22300%22 y=%22380%22 font-size=%2218%22%3EImage Not Found%3C/text%3E%3C/g%3E%3C/svg%3E';"
+            />
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section class="py-10 md:py-16 px-4" id="faq">
+      <h3 class="text-center text-2xl font-semibold mb-8 font-mono">
+        Frequently Asked Questions
+      </h3>
+      <div class="max-w-2xl mx-auto space-y-4 font-mono text-base">
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>What is LegalBook?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            LegalBook is a new way to access legal help — faster, easier, and
+            more human. It’s not just an app. It’s a voice for those who’ve
+            never been heard..
+          </p>
+        </details>
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>Who is this for?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            For anyone who’s ever felt helpless in the face of legal trouble —
+            whether you're being harassed, cheated, threatened, or simply
+            ignored.
+          </p>
+        </details>
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>Is this an app, a website, or a service?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            LegalBook is an independent legal tech platform. We’re building a
+            bridge — between everyday people and trusted legal help.
+          </p>
+        </details>
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>Is it free?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            Yes — LegalBook will always offer a free way to understand your
+            rights and connect with legal support. Because justice shouldn’t
+            depend on your wallet.
+          </p>
+        </details>
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>When is it launching?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            Very soon. We’re in the final phase. Sign up now to be among the
+            first to use it and help shape the future of legal access in India.
+          </p>
+        </details>
+        <details class="group border-b pb-2">
+          <summary
+            class="cursor-pointer text-gray-800 font-medium flex items-center justify-between"
+          >
+            <span>Why should I sign up early?</span>
+            <span class="text-gray-500 group-open:hidden">+</span>
+            <span class="text-gray-500 hidden group-open:inline">−</span>
+          </summary>
+          <p class="mt-2 text-gray-600">
+            You’ll get early access to the platform before public release — plus
+            exclusive updates, priority support, and a chance to be part of
+            something powerful.
+          </p>
+        </details>
+      </div>
+    </section>
 
-<section class="py-10 md:py-16 px-4">
-  <h3 class="text-center text-2xl font-semibold mb-8 font-mono">Frequently Asked Questions</h3>
-  <div class="max-w-2xl mx-auto space-y-4 font-mono text-base">
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>What is LegalBook?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">LegalBook is a new way to access legal help — faster, easier, and more human.
-It’s not just an app. It’s a voice for those who’ve never been heard..</p>
-    </details>
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>Who is this for?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">For anyone who’s ever felt helpless in the face of legal trouble —
-whether you're being harassed, cheated, threatened, or simply ignored.</p>
-    </details>
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>Is this an app, a website, or a service?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">LegalBook is an independent legal tech platform.
-We’re building a bridge — between everyday people and trusted legal help.</p>
-    </details>
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>Is it free?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">Yes — LegalBook will always offer a free way to understand your rights and connect with legal support.
-Because justice shouldn’t depend on your wallet.</p>
-    </details>
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>When is it launching?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">Very soon. We’re in the final phase.
-Sign up now to be among the first to use it and help shape the future of legal access in India.</p>
-    </details>
-    <details class="group border-b pb-2">
-      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
-        <span>Why should I sign up early?</span>
-        <span class="text-gray-500 group-open:hidden">+</span>
-        <span class="text-gray-500 hidden group-open:inline">−</span>
-      </summary>
-      <p class="mt-2 text-gray-600">You’ll get early access to the platform before public release —
-plus exclusive updates, priority support, and a chance to be part of something powerful.</p>
-    </details>
-  </div>
-</section>
+    <footer class="bg-black text-white text-center py-6 px-4">
+      <p class="text-lg mb-2 font-mono">Contact Us</p>
 
- <footer class="bg-black text-white text-center py-6 px-4">
-    <p class="text-lg mb-2 font-mono opacity-70">Contact Us</p>
-    
-    <a href="mailto:info@legalbook.in" 
-       class="text-lg mb-4 font-mono opacity-70 hover:opacity-100 transition-opacity duration-300 inline-block">
-       info@legalbook.in
-    </a>
+      <a
+        href="mailto:info@legalbook.in"
+        class="text-lg mb-4 font-mono opacity-70 hover:opacity-100 transition-opacity duration-300 inline-block underline"
+      >
+        info@legalbook.in
+      </a>
 
-    <p class="text-xs text-gray-400 font-mono">Copyright ©2025 LegalBook. All Rights Reserved.</p>
-</footer>
+      <p class="text-xs text-gray-400 font-mono">
+        Copyright ©2025 LegalBook. All Rights Reserved.
+      </p>
+    </footer>
 
-  <script>
-    const form = document.getElementById('waitlist-form');
-    const url = 'https://script.google.com/macros/s/AKfycbyoTFhjaA0Jp-sorEv_a6r1rqn9ZB6PkmmQ7NW79ZK03BiFihCqU9tSquQK2c50Owg/exec';
+    <script>
+      const form = document.getElementById("waitlist-form");
+      const url =
+        "https://script.google.com/macros/s/AKfycbyoTFhjaA0Jp-sorEv_a6r1rqn9ZB6PkmmQ7NW79ZK03BiFihCqU9tSquQK2c50Owg/exec";
 
-    form.addEventListener('submit', (e) => {
+      form.addEventListener("submit", (e) => {
         // Prevent the default form submission behavior
         e.preventDefault();
         const submitButton = form.querySelector('button[type="submit"]');
         submitButton.disabled = true;
-        submitButton.textContent = 'Submitting...';
+        submitButton.textContent = "Submitting...";
         fetch(url, {
-            method: 'POST',
-            body: new FormData(form)
+          method: "POST",
+          body: new FormData(form),
         })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-            alert('Email submitted successfully!');
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Success:", data);
+            alert("Email submitted successfully!");
             form.reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('An error occurred. Please try again.');
-        })
-        .finally(() => {
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again.");
+          })
+          .finally(() => {
             submitButton.disabled = false;
-            submitButton.textContent = 'Join waitlist';
-        });
-    });
-</script>
-</body>
+            submitButton.textContent = "Join waitlist";
+          });
+      });
+    </script>
+  </body>
 </html>
