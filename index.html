@@ -1,281 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awaaz - Early Access</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="script.js">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LegalBook</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  @media (max-width: 480px) {
+        #image-container {
+          margin-top: -80px !important;
+          margin-bottom: -50px !important;
+        }
+      }
+      
+      @media (min-width: 481px) and (max-width: 767px) {
+        #image-container {
+          margin-top: -100px !important;
+          margin-bottom: -70px !important;
+        }
+      }
+      
+      @media (min-width: 768px) and (max-width: 1029px) {
+        #image-container {
+          margin-top: -120px !important;
+          margin-bottom: -80px !important;
+        }
+      }
+      
+      /* CRITICAL: Maintain overflow for 1030px and above */
+      @media (min-width: 1030px) {
+        #image-container {
+          margin-top: -140px !important;
+          margin-bottom: -90px !important;
+        }
+      }
+      
+      /* Extra large screens - even more aggressive overflow */
+      @media (min-width: 1400px) {
+        #image-container {
+          margin-top: -160px !important;
+          margin-bottom: -100px !important;
+        }
+      }
+      
+      /* Responsive section margins */
+      #building {
+        margin-top: 50px;
+        margin-bottom: 40px;
+      }
+      
+      @media (min-width: 481px) {
+        #building {
+          margin-top: 70px;
+          margin-bottom: 50px;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        #building {
+          margin-top: 80px;
+          margin-bottom: 60px;
+        }
+      }
+      
+      @media (min-width: 1030px) {
+        #building {
+          margin-top: 140px;
+          margin-bottom: 90px;
+        }
+      }
+      
+      @media (min-width: 1400px) {
+        #building {
+          margin-top: 160px;
+          margin-bottom: 100px;
+        }
+      }
     </style>
 </head>
-<body>
-<div class="header">
-        <div class="container">
-        <div class="header">
-            <div class="logo-container">
-                <div class="logo-box">
-                    <h1 class="logo-text"><span>A</span>waaz</h1>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <div class="px-2 sm:px-4 pt-12 pb-8 border-gray-300">
+      <div class="max-w-[1800px] mx-auto mt-1 flex justify-center">
+        <div class="w-full max-w-[1800px] h-[60px] bg-[#2C2C2C] rounded-xl flex items-center justify-between px-3 sm:px-8">
+          
+          <!-- Left links -->
+          <div class="flex items-center gap-2 sm:gap-5 text-white font-kumbh flex-shrink-0">
+            <div class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap">FAQ</div>
+            <div class="cursor-pointer font-normal text-xs sm:text-base whitespace-nowrap">What we do?</div>
+          </div>
+          
+          <!-- Center logo -->
+          <h1 class="text-white text-lg sm:text-2xl font-normal text-center font-kumbh flex-grow mx-2 sm:mx-4">
+            <span class="font-bold">L</span>egalBook
+          </h1>
+          
+          <!-- Right button -->
+          <button class="bg-white text-[#153D59] font-semibold px-3 sm:px-5 py-2 rounded-[10px] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md text-xs sm:text-base whitespace-nowrap flex-shrink-0">
+            Join Waiting List
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Hero -->
+  <section class="text-center px-6 md:px-8 py-20 bg-white">
+  <h1 class="text-[2.5rem] md:text-[3rem] leading-tight font-bold tracking-tight">
+    Legal access isn’t a luxury. 
+    <span class="italic text-gray-700">It’s your right.</span>
+  </h1>
+
+  <p class="mt-6 text-gray-600 text-sm md:text-base leading-relaxed font-montserrat max-w-2xl mx-auto">
+  Every pending case is a life paused. And in India, there are over 5 crore lives on hold.
+</p>
+
+
+  <!-- Waitlist Form -->
+  <div class="mt-12 max-w-lg mx-auto">
+                    <form class="relative flex items-center shadow-lg rounded-full overflow-hidden">
+                        <input 
+                            type="email" 
+                            placeholder="Your email address" 
+                            class="w-full py-4 pl-6 pr-40 text-gray-700 focus:outline-none"
+                            required
+                        >
+                        <button 
+                            type="submit"
+                            class="absolute right-1 top-1 bottom-1 bg-gray-800 text-white font-semibold px-6 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
+                        >
+                            Join waitlist
+                        </button>
+                    </form>
+                    <p class="mt-4 text-sm text-gray-500">
+                        Get priority access, early features, and exclusive perks.
+                    </p>
                 </div>
             </div>
-            <p class="tagline">Legal access isn't a luxury, it's your right.</p>
-        </div>
 
-        
-        <!-- Video Section -->
-    <section class="video-section">
-    <div class="video-container">
-        <div class="video-wrapper">
-            <!-- YouTube iframe embed -->
-            <iframe id="youtube-video"
-                src="https://www.youtube.com/embed/nJX5EORRHDo?enablejsapi=1&rel=0&modestbranding=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <!-- Custom play button -->
-            <button id="play-button" aria-label="Play video">
-                <svg viewBox="0 0 24 24" width="48" height="48">
-                    <path fill="#ffffff" d="M8 5v14l11-7z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
+
+
 </section>
-        
-        <!-- Why Rights Matter Section -->
-        <section class="rights-section">
-    <div class="rights-content">
-        <div class="rights-image">
-            <img src="/gud.png" 
-                 alt="Diverse group of people learning about legal rights"
-                 loading="lazy"
-                 width="600"
-                 height="400">
+
+  <!-- What are we building -->
+<!-- What are we building -->
+ <section id="building" class="relative bg-[#ECECEC] py-12 overflow-visible">
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <!-- Flex layout maintained on all screen sizes -->
+        <div class="flex flex-row gap-2 md:gap-4 items-center">
+          
+          <!-- Text Content -->
+          <div class="w-7/12 md:w-1/2 z-10 relative pr-2 md:pr-0">
+            <h2 class="text-lg sm:text-xl md:text-4xl font-bold text-gray-900 leading-tight">
+              What are we building?
+            </h2>
+            <p class="mt-3 md:mt-6 text-xs sm:text-sm md:text-lg text-gray-600 leading-relaxed">
+              We're building a <strong class="font-semibold text-gray-800">legal tech</strong> platform that makes justice accessible, understandable, and affordable for every Indian.<br><br>
+              Just <strong class="font-semibold text-gray-800">real legal help</strong>, in your language, on your phone when you actually need it.
+            </p>
+          </div>
+
+          <!-- Image Overflow Up and Down - Aggressive overflow like desktop -->
+          <div id="image-container" class="w-5/12 md:w-1/2 relative z-20 flex justify-center items-center" 
+               style="margin-top: -120px; margin-bottom: -80px;">
+            <img 
+              src="pic.png" 
+              alt="Scales of Justice Illustration"
+              class="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[600px] object-contain"
+              onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22650%22 viewBox=%220 0 600 650%22%3E%3Crect width=%22600%22 height=%22650%22 fill=%22%23e2e8f0%22/%3E%3Cg fill=%22%23334155%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 text-anchor=%22middle%22%3E%3Ctext x=%22300%22 y=%22280%22%3EScales of Justice%3C/text%3E%3Ctext x=%22300%22 y=%22320%22%3EIllustration%3C/text%3E%3Ctext x=%22300%22 y=%22380%22 font-size=%2218%22%3EImage Not Found%3C/text%3E%3C/g%3E%3C/svg%3E';"
+            />
+          </div>
+
         </div>
-        <div class="rights-text">
-            <h2 class="section-title">Why Knowing Your Rights Matters</h2>
-            <p class="problem-statement">Most Indian's don't know their rights - and the silence costs them everything.</p>
-            
-            <ul class="issues-list">
-                <li>From false arrests to unpaid wages...</li>
-                <li>From eviction to assault...</li>
-            </ul>
-            
-            <p class="cta-phrase">Let your Rights-Speak Book.</p>
-        </div>
-    </div>
-</section>
-        
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What is Awaaz?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Awaaz is a new way to access legal help — faster, easier, and more human.
-It’s not just an app. It’s a voice for those who’ve never been heard.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Who is Awaaz for?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>For anyone who’s ever felt helpless in the face of legal trouble —
+      </div>
+    </section>  
+
+
+
+
+
+
+  <!-- FAQ Section -->
+<section class="py-16 px-4">
+  <h3 class="text-center text-xl font-semibold mb-8 font-mono">Frequently Asked Questions</h3>
+  <div class="max-w-2xl mx-auto space-y-4 font-mono text-sm">
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>What is Awaaz?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">Awaaz is a new way to access legal help — faster, easier, and more human.
+It’s not just an app. It’s a voice for those who’ve never been heard..</p>
+    </details>
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>Who is this for?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">For anyone who’s ever felt helpless in the face of legal trouble —
 whether you're being harassed, cheated, threatened, or simply ignored.</p>
-                    </div>
-                </div>
-                <!-- <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is this an app, a website, or a service?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We're building a comprehensive platform with both web and mobile access.</p>
-                    </div>
-                </div> -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is it free?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes — Awaaz will always offer a free way to understand your rights and connect with legal support.
+    </details>
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>Is this an app, a website, or a service?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">It is...</p>
+    </details>
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>Is it free?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">Yes — Awaaz will always offer a free way to understand your rights and connect with legal support.
 Because justice shouldn’t depend on your wallet.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>When is it launching?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Very soon. We’re in the final phase.
+    </details>
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>When is it launching?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">Very soon. We’re in the final phase.
 Sign up now to be among the first to use it and help shape the future of legal access in India.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What happens after i sign ip ?</h3>
-                        <div class="faq-toggle"></div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You’ll get early access to the platform before public release —
-plus exclusive updates, priority support, and a chance to be part of something powerful..</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Waitlist Section -->
-        <section class="waitlist-section">
-    <div class="waitlist-box">
-        <h3>Join now with early access</h3>
-        <form id="waitlist-form" class="waitlist-form">
-            <input type="email" id="waitlist-email" placeholder="Your email address" required>
-            <button type="submit" class="join-button">Join waitlist</button>
-        </form>
-        <div id="form-message" style="display: none; margin-top: 1rem;"></div>
-    </div>
+    </details>
+    <details class="group border-b pb-2">
+      <summary class="cursor-pointer text-gray-800 font-medium flex items-center justify-between">
+        <span>Why should I sign up early?</span>
+        <span class="text-gray-500 group-open:hidden">+</span>
+        <span class="text-gray-500 hidden group-open:inline">−</span>
+      </summary>
+      <p class="mt-2 text-gray-600">You’ll get early access to the platform before public release —
+plus exclusive updates, priority support, and a chance to be part of something powerful.</p>
+    </details>
+  </div>
 </section>
 
-        
-        <!-- Footer -->
-        <footer>
-            <p>Copyright@2025 Awaaz. All Rights Reserved</p>
-        </footer>
-    </div>
-    <script>
-        // Video Play Button
-        // const video = document.getElementById('awaaz-video');
-        // const playButton = document.getElementById('play-button');
-        
-        // playButton.addEventListener('click', () => {
-        //     if (video.paused) {
-        //         video.play();
-        //         playButton.style.display = 'none';
-        //     }
-        // });
-        
-        // video.addEventListener('play', () => {
-        //     playButton.style.display = 'none';
-        // });
-        
-        // video.addEventListener('pause', () => {
-        //     playButton.style.display = 'flex';
-        // });
-        
-        // FAQ Accordion with Mouse Events
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            const answer = item.querySelector('.faq-answer');
-            
-            // Click event for mobile/touch devices
-            item.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    item.classList.toggle('active');
-                }
-            });
-            
-            // Mouse enter/leave for desktop
-            if (window.innerWidth > 768) {
-                item.addEventListener('mouseenter', () => {
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    item.classList.add('active');
-                });
-                
-                item.addEventListener('mouseleave', () => {
-                    item.classList.remove('active');
-                });
-            }
-        });
-        
-        // Update event listeners on window resize
-        window.addEventListener('resize', () => {
-            faqItems.forEach(item => {
-                // Remove all existing event listeners
-                item.removeEventListener('mouseenter', handleMouseEnter);
-                item.removeEventListener('mouseleave', handleMouseLeave);
-                
-                // Add appropriate listeners based on screen size
-                if (window.innerWidth > 768) {
-                    item.addEventListener('mouseenter', handleMouseEnter);
-                    item.addEventListener('mouseleave', handleMouseLeave);
-                }
-            });
-        });
-        
-        function handleMouseEnter(e) {
-            const item = e.currentTarget;
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                }
-            });
-            item.classList.add('active');
-        }
-        
-        function handleMouseLeave(e) {
-            e.currentTarget.classList.remove('active');
-        }
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6 px-4">
+    <p class="text-sm mb-2 font-mono">Contact Us</p>
+    <p class="text-sm mb-4 font-mono">info@legalbook.in</p>
+    <p class="text-xs text-gray-400 font-mono">Copyright ©2025 LegalBook. All Rights Reserved.</p>
+  </footer>
 
-        document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const email = document.getElementById('waitlist-email').value;
-    const button = document.querySelector('.join-button');
-    const message = document.getElementById('form-message');
-    
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    
-    try {
-        const response = await fetch('YOUR_APPS_SCRIPT_URL', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({email: email})
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            message.textContent = 'Thank you! You\'ve been added to the waitlist.';
-            message.style.color = 'green';
-            document.getElementById('waitlist-form').reset();
-        } else {
-            throw new Error('Failed to save email');
-        }
-    } catch (error) {
-        message.textContent = 'Something went wrong. Please try again.';
-        message.style.color = 'red';
-        console.error('Error:', error);
-    } finally {
-        message.style.display = 'block';
-        button.disabled = false;
-        button.textContent = 'Join waitlist';
-    }
-});
-    </script>
 </body>
 </html>
